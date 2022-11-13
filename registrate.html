@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Usuarios</title>
+    <link rel="stylesheet" href="css/registrate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+
+<body>
+
+    <main>
+        <form action="" class="form">
+            <div class="form__container">
+                <h2 class=" form__title">Crear Usuario</h2>
+                <input type="email" class="form__input" placeholder="Email">
+                <input type="text" class="form__input" placeholder="Nombre">
+                <input type="text" class="form__input" placeholder="Apellido">
+                <input type="password" class="form__input" placeholder="Contraseña" required>
+                <input type="password" class="form__input" placeholder="Repetir contraseña">
+
+                <div class="container-button">
+                    <input type="button" value="Guardar" class="form__cta" onclick="location.href='login.html'">
+                    <input type="button" value="Cancelar" class="form__cta" onclick="location.href='login.html'">
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script>
+
+        const selectElement = function (element) {
+            return document.querySelector(element);
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function () {
+            body.classList.toggle('open');
+        })
+
+    </script>
+
+</body>
+
+</html>
